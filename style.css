@@ -1,30 +1,40 @@
-text{
+
+#topItemFlex text{
     font-size: 18px;
     font-weight: bolder;
     color: white;
     font-style:tisa;
     margin-left: 10px;
 }
+
+.rightTopFlexItem text{
+    font-size: 18px;
+    font-weight: bolder;
+    color: white;
+    font-style:tisa;
+    margin-left: 10px;
+
+}
+
 .container-fluid{
-    padding:0;
+    padding:0;overflow: hidden;
+
 }
 .leftFlex{
     display: flex;
-    flex-flow: column nowrap;
+    flex-flow: column wrap;
     justify-content:flex-start;
     align-items:stretch;
-    border-right:3px solid  #424949 ;
-    
+    overflow: hidden;
 }
 
 #topItemFlex{
     display: flex;
-    flex-flow: row nowrap;
+    flex-flow: row wrap;
     justify-content:flex-start;
     align-items:center;
     flex-basis: 80px;
     background-color: #424949 ;
-    border-radius: 2px
     ;
 }
 
@@ -35,13 +45,81 @@ text{
 }
 
 .controlsTray{
-    margin-left: 70px;
+    margin-left: 75px;
 
 }
+
+button{
+    border-radius:30px;
+    border:none;
+}
+.wholeFriendsAreaItemFlex{
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: flex-start;
+    align-items: stretch;
+    max-height: 460px;
+    overflow: hidden;
+}
+.wholeFriendsAreaItemFlex:hover{
+    overflow:auto;
+}
+#friendsItemFlex{
+    display: flex;
+    flex-flow: row wrap;
+    justify-content:flex-start;
+    align-items:center;
+    flex-basis: 80px;
+    border-radius: 10px;
+    background-color:#b3b6b7;
+    
+}
+#friendsItemFlex text{
+    font-size: 18px;
+    font-weight: bolder;
+    color:black;
+    font-style:tisa;
+}
+
 #friendsProfilePic{
     width: 60px;
     height: 60px;
     border-radius: 40px;
+}
 
+#spanItemFlex{
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: center;
+    align-items: flex-start;
+    margin-left: 10px;
+}
 
+.text-muted{
+    font-size: 16px;
+    margin-left: 100px;
+}
+
+.rightFlex{
+    display: flex;
+    flex-flow: column wrap;
+    justify-content:flex-start;
+    align-items:stretch;
+    border-left: 4px solid #424949 ;
+}
+
+.rightTopFlexItem{
+    display: flex;
+    flex-flow: row wrap;
+    justify-content:flex-start;
+    align-items:center;
+    flex-basis: 80px;
+    background-color: #424949 ;
+}
+
+.rightBottomFlexItem{
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: flex-start;
+    align-items: center;
 }
