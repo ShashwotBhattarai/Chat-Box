@@ -1,8 +1,13 @@
 
+.container-fluid{
+    padding:0;
+    overflow: hidden;
+
+}
 #topItemFlex text{
     font-size: 18px;
     font-weight: bolder;
-    color: white;
+    color: black;
     font-style:tisa;
     margin-left: 10px;
 }
@@ -10,15 +15,25 @@
 .rightTopFlexItem text{
     font-size: 18px;
     font-weight: bolder;
-    color: white;
+    color: black;
     font-style:tisa;
     margin-left: 10px;
 
 }
+button{
+    border-radius:30px;
+    border:none;
+}
 
-.container-fluid{
-    padding:0;overflow: hidden;
+button:hover{
+    background-color:white;    
+}
 
+.form-control{
+    background-color: #f2f3f4 
+}
+.form-control:hover{
+    background-color: white;
 }
 .leftFlex{
     display: flex;
@@ -26,6 +41,7 @@
     justify-content:flex-start;
     align-items:stretch;
     overflow: hidden;
+    background-color: #d7dbdd ;
 }
 
 #topItemFlex{
@@ -34,8 +50,6 @@
     justify-content:flex-start;
     align-items:center;
     flex-basis: 80px;
-    background-color: #424949 ;
-    ;
 }
 
 #userProfilePic{
@@ -45,13 +59,9 @@
 }
 
 .controlsTray{
-    margin-left: 75px;
+    position: absolute;
+    right: 10px;
 
-}
-
-button{
-    border-radius:30px;
-    border:none;
 }
 .wholeFriendsAreaItemFlex{
     display: flex;
@@ -71,7 +81,10 @@ button{
     align-items:center;
     flex-basis: 80px;
     border-radius: 10px;
-    background-color:#b3b6b7;
+    
+}
+#friendsItemFlex:hover{
+    background-color:  #cacfd2 ;
     
 }
 #friendsItemFlex text{
@@ -105,7 +118,8 @@ button{
     flex-flow: column wrap;
     justify-content:flex-start;
     align-items:stretch;
-    border-left: 4px solid #424949 ;
+    background-color:#e5e7e9;
+    
 }
 
 .rightTopFlexItem{
@@ -114,12 +128,39 @@ button{
     justify-content:flex-start;
     align-items:center;
     flex-basis: 80px;
-    background-color: #424949 ;
 }
 
 .rightBottomFlexItem{
     display: flex;
     flex-flow: row wrap;
-    justify-content: flex-start;
+    justify-content:flex-start;
     align-items: center;
+    position: absolute;
+    bottom: 4px;
+    background-color: #e5e7e9;
+   
+}
+.typeHere{
+    width: 770px;
+    border-radius: 20px;
+    margin-left: 10px;
+    margin-right: 15px;
+    background-color:  #f8f9f9 ;
+    
+}
+.typeHere:hover{
+    background-color:white;
+}
+
+.messageBox{
+    display: flex;
+    flex-flow: column;
+    justify-content: flex-start;
+    align-items: flex-end;
+    flex-basis: 457px;
+    max-height: 457px;
+    overflow: hidden;
+}
+.messageBox:hover{
+    overflow: auto;
 }
