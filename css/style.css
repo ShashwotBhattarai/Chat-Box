@@ -135,8 +135,6 @@ button:hover{
     flex-flow: row wrap;
     justify-content:flex-start;
     align-items: center;
-    position: absolute;
-    bottom: 4px;
     background-color: #e5e7e9;
    
 }

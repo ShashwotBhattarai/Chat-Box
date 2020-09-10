@@ -1,0 +1,12 @@
+
+.center_div{
+    margin: 100px auto;
+    width:40%;
+
+}
+.card{
+    background-color:#d7dbdd;
+}
+.card-body h2{
+    margin-bottom: 50px;
+}
